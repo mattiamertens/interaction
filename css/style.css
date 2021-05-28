@@ -1,12 +1,28 @@
+@font-face {
+    font-family: 'Adieu';
+    src: url('Adieu-Bold.woff2') format('woff2'),
+        url('Adieu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --first-color: #4151DA;
+  }
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     min-height: 3000px;
+    background-color: var(--first-color);
+    font-family: Adieu;
 }
 p{
     padding: 0;
 }
 a{
-    max-height: 10px;
+    text-decoration: none;
+    color: white;
+
 }

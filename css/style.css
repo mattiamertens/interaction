@@ -8,15 +8,17 @@
 
 :root {
     --first-color: #4151DA;
-  }
+}
 
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: Adieu;
     min-height: 3000px;
     background-color: var(--first-color);
-    font-family: Adieu;
 }
 p{
     padding: 0;

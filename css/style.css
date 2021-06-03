@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Adieu';
-    src: url('font/Adieu-Bold.woff2') format('woff2'),
-        url('font/Adieu-Bold.woff') format('woff');
-    font-weight: bold;
+    src: url('font/Adieu/Adieu-Bold.woff') format('woff') font-weight-normal,
+         url('font/Adieu/Adieu-Light.woff') format('woff') font-weight-light;
 }
+
 @font-face {
     font-family: 'Neurial Grotesk';
         src: url('font/Neurial_Grotesk/NeurialGrotesk-Regular.woff') format('woff') font-weight-normal,
-        url('font/Neurial_Grotesk/NeurialGrotesk-Medium.woff') format('woff') font-weight-medium,
+             /* url('font/Neurial_Grotesk/NeurialGrotesk-Medium.woff') format('woff') font-weight-medium, */
              url('font/Neurial_Grotesk/NeurialGrotesk-Bold.woff') format('woff') font-weight-bold;
 }
 
@@ -18,22 +18,81 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     min-height: 3000px;
-    background-color: var(--first-color);
     font-family: Neurial Grotesk;
     font-weight: normal;
-    font-size: 30px;
 }
-p{
-    padding: 0;
-}
+
 a{
     text-decoration: none;
     color: white;
+    font-size: 16px;
+}
+.hero{
+    background-color: var(--first-color);
+    min-height: 100vh;
+}
+.navbar{
+    position: relative;
+    top: 10%;
+    font-family: Adieu;
+    font-weight: lighter;
+    margin: 0 auto;
+    width: 80%;
+    height: 65px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 .home{
-    font-family: Adieu;
+    font-size: 24px;
+}
+  
+.custom-element {
+    width: 290px;
+    height: 290px;
+}
+.image-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red ;
+    height: 50vh;
+    width: 50vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-element:nth-child(1) {
+    
+}
+.section-first .custom-element:nth-child(2) {
+
+}
+.section-first .custom-element:nth-child(3) {
+}
+.section-first .custom-element:nth-child(4) {
+
+}
+.section-first .custom-element:nth-child(5) {
+
+}
+.section-first .custom-element:nth-child(6) {
+
+}
+
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
+position: absolute;
 }

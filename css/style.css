@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'Neurial Grotesk';
         src: url('font/Neurial_Grotesk/NeurialGrotesk-Regular.woff') format('woff') font-weight-normal,
-             /* url('font/Neurial_Grotesk/NeurialGrotesk-Medium.woff') format('woff') font-weight-medium, */
+             url('font/Neurial_Grotesk/NeurialGrotesk-Medium.woff') format('woff') font-weight-medium,
              url('font/Neurial_Grotesk/NeurialGrotesk-Bold.woff') format('woff') font-weight-bold;
 }
 
@@ -23,24 +23,48 @@ body{
     min-height: 3000px;
     font-family: Neurial Grotesk;
     font-weight: normal;
+    font-size: 14px;
 }
 
 a{
     text-decoration: none;
     color: white;
-    font-size: 16px;
 }
+.button{
+    border-radius: 50px;
+    height: 39px;
+    width: 160px;
+    font-family: Adieu;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-light-primary{
+    background-color: #fff;
+    color: var(--first-color);
+}
+.btn-light-secondary{
+    border: 1px solid white;
+}
+.btn-light-tertiary{
+    text-decoration: underline;
+}
+
+
 .hero{
     background-color: var(--first-color);
     min-height: 100vh;
 }
 .navbar{
     position: relative;
-    top: 10%;
+    top: 10px;
+    padding: 0 24px;
+    color: white;
     font-family: Adieu;
     font-weight: lighter;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     height: 65px;
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
     border-radius: 45px;
@@ -51,14 +75,36 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+
+.subscribe{
+
+}
+.sections{
+    width: 63%;
+    display: flex;
+    justify-content: space-evenly;
+}
 .home{
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: bold;
+
 }
-  
-.custom-element {
-    width: 290px;
-    height: 290px;
+.title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Adieu;
+    color: white;
 }
+.title p {
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+}
+
 .image-container {
     position: absolute;
     display: flex;
@@ -67,32 +113,61 @@ a{
     align-content: center;
     justify-content: center;
     align-items: center;
-    border: 1px solid red ;
     height: 50vh;
     width: 50vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.custom-element {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+}
 
 .custom-element:nth-child(1) {
-    
+    left: 56%;
+    top: 16%;
 }
-.section-first .custom-element:nth-child(2) {
+.custom-element:nth-child(2) {
+    left: 11%;
+    top: 41%;
+    z-index: 10;
+}
+.custom-element:nth-child(3) {
+    left: 44%;
+    top: -13%;
+}
+.custom-element:nth-child(4) {
+    left: -0%;
+    top: -0%;
+}
+.custom-element:nth-child(5) {
+    left: 14%;
+    top: -10%;
+}
+.custom-element:nth-child(6) {
+    left: 44%;
+    top: 59%;
+}
 
+.wrapper {
+    position: absolute;
+    top: 83%;
+    left: 13%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 70%;
 }
-.section-first .custom-element:nth-child(3) {
+.description-text{
+   width: 55%;
+   font-size: 16px;
+   font-weight: medium;
 }
-.section-first .custom-element:nth-child(4) {
-
-}
-.section-first .custom-element:nth-child(5) {
-
-}
-.section-first .custom-element:nth-child(6) {
-
-}
-
-.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
-position: absolute;
+.buttons{
+    display: flex;
 }

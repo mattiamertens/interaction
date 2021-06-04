@@ -93,7 +93,7 @@ a{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     font-size: 100px;
     font-weight: bold;
     font-family: Adieu;
@@ -117,7 +117,7 @@ a{
     width: 50vw;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
 }
 .custom-element {
     width: 290px;
@@ -170,4 +170,28 @@ a{
 }
 .buttons{
     display: flex;
+    font-weight: lighter;
+}
+
+
+
+.second-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.mockup{
+    width: 300px;
+    height: 500px;
+    background: url('../media/mockup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.white{
+    background-color: red;
+    width: 100vw;
+    height: 400px;
 }

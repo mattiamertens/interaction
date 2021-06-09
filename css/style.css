@@ -49,9 +49,15 @@
 }
 .flex-display-center-center{
     display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: center; /* main axis of conatiner - H */
+}
+.flex-display-sb-center{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: space-between; /* main axis of conatiner - H */
 }
 
 *{
@@ -74,9 +80,6 @@ a{
     height: 39px;
     width: 160px;
     font-family: Adieu-bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 .btn-light-primary{
@@ -111,12 +114,7 @@ a{
     height: 65px;
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
     border-radius: 45px;
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .subscribe{
@@ -125,7 +123,7 @@ a{
 .sections{
     width: 63%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .home{
     font-size: 26px;
@@ -149,12 +147,6 @@ a{
 
 .image-container {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
     height: 50vh;
     width: 50vw;
     left: 50%;
@@ -197,18 +189,13 @@ a{
     position: absolute;
     top: 83%;
     left: 13%;
-    display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     color: white;
     width: 70%;
 }
 .description-text{
    width: 55%;
    font-size: 16px;
-   font-weight: medium;
 }
 .buttons{
     display: flex;
@@ -233,10 +220,7 @@ a{
     margin: 7vh 3%;
     border-radius: 40px;
     background-color: red;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .toggle{
     position: absolute;
@@ -266,4 +250,7 @@ a{
 }
 .selected{
     border-bottom: 3px solid var(--first-color);
+}
+.selected-svg{
+    fill: var(--first-color);
 }

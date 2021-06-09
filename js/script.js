@@ -186,21 +186,24 @@ $('#player').click(function () {
 });
 
 //Toggle button
-$('.interessi').click(toggleviewInt);
-$('.colleghi').click(toggleviewCol);
-
-function toggleviewInt(){
+$('.interessi').click(toggleViewInt);
+$('.colleghi').click(toggleViewCol);
+function toggleViewInt(){
     var toggleInteressi = $('.interessi');
     if(!toggleInteressi.hasClass("selected")){
      toggleInteressi.addClass('selected');
      $('.colleghi').removeClass('selected');
+     $('.svg-rect').addClass('selected-svg');
+     $('.svg-circle').removeClass('selected-svg');
     }   
 }
-function toggleviewCol(){
+function toggleViewCol(){
     var toggleColleghi = $('.colleghi');
     if(!toggleColleghi.hasClass('selected')){
         toggleColleghi.addClass('selected');
         $('.interessi').removeClass('selected');
+        $('.svg-circle').addClass('selected-svg');
+        $('.svg-rect').removeClass('selected-svg');
     }   
 }
 

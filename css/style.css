@@ -1,18 +1,57 @@
 @font-face {
-    font-family: 'Adieu';
-    src: url('font/Adieu/Adieu-Bold.woff') format('woff') font-weight-normal,
-         url('font/Adieu/Adieu-Light.woff') format('woff') font-weight-light;
+    font-family: 'Adieu-bold';
+    src: url('font/Adieu/bold/adieu-bold.eot') format('eot'),
+         url('font/Adieu/bold/adieu-bold.svg') format('svg'),
+         url('font/Adieu/bold/adieu-bold.ttf') format('ttf'),
+         url('font/Adieu/bold/adieu-bold.woff') format('woff'),
+         url('font/Adieu/bold/adieu-bold.woff2') format('woff2');
+        font-weight: bold;
+}
+@font-face {
+    font-family: 'Adieu-light';
+    src: url('font/Adieu/light/adieu-light.eot') format('eot'),
+         url('font/Adieu/light/adieu-light.svg') format('svg'),
+         url('font/Adieu/light/adieu-light.ttf') format('ttf'),
+         url('font/Adieu/light/adieu-light.woff') format('woff'),
+         url('font/Adieu/light/adieu-light.woff2') format('woff2');
+        font-weight: lighter;
 }
 
 @font-face {
-    font-family: 'Neurial Grotesk';
-        src: url('font/Neurial_Grotesk/NeurialGrotesk-Regular.woff') format('woff') font-weight-normal,
-             url('font/Neurial_Grotesk/NeurialGrotesk-Medium.woff') format('woff') font-weight-medium,
-             url('font/Neurial_Grotesk/NeurialGrotesk-Bold.woff') format('woff') font-weight-bold;
+    font-family: 'Neurial Grotesk regular';
+        src: url('font/Neurial_Grotesk/regular/neurialgrotesk-regular.eot') format('eot'),
+             url('font/Neurial_Grotesk/regular/neurialgrotesk-regular.svg') format('svg'),
+             url('font/Neurial_Grotesk/regular/neurialgrotesk-regular.ttf') format('ttf'),
+             url('font/Neurial_Grotesk/regular/neurialgrotesk-regular.woff') format('woff'),
+             url('font/Neurial_Grotesk/regular/neurialgrotesk-regular.woff2') format('woff2');
 }
+@font-face {
+    font-family: 'Neurial Grotesk medium';
+        src: url('font/Neurial_Grotesk/medium/neurialgrotesk-medium.eot') format('eot'),
+             url('font/Neurial_Grotesk/medium/neurialgrotesk-medium.svg') format('svg'),
+             url('font/Neurial_Grotesk/medium/neurialgrotesk-medium.ttf') format('ttf'),
+             url('font/Neurial_Grotesk/medium/neurialgrotesk-medium.woff') format('woff'),
+             url('font/Neurial_Grotesk/medium/neurialgrotesk-medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Neurial Grotesk bold';
+        src: url('font/Neurial_Grotesk/bold/neurialgrotesk-bold.eot') format('eot'),
+             url('font/Neurial_Grotesk/bold/neurialgrotesk-bold.svg') format('svg'),
+             url('font/Neurial_Grotesk/bold/neurialgrotesk-bold.ttf') format('ttf'),
+             url('font/Neurial_Grotesk/bold/neurialgrotesk-bold.woff') format('woff'),
+             url('font/Neurial_Grotesk/bold/neurialgrotesk-bold.woff2') format('woff2');
+}
+
 
 :root {
     --first-color: #4151DA;
+    --bg-color: #EFEFEF;
+}
+.flex-display-center-center{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 *{
@@ -21,9 +60,9 @@
 }
 body{
     min-height: 3000px;
-    font-family: Neurial Grotesk;
-    font-weight: normal;
+    font-family: Neurial Grotesk regular;
     font-size: 14px;
+    background-color: var(--bg-color);
 }
 
 a{
@@ -34,8 +73,7 @@ a{
     border-radius: 50px;
     height: 39px;
     width: 160px;
-    font-family: Adieu;
-    font-weight: bold;
+    font-family: Adieu-bold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,6 +88,7 @@ a{
 }
 .btn-light-tertiary{
     text-decoration: underline;
+    font-family: Adieu-light;
 }
 
 
@@ -58,12 +97,15 @@ a{
     min-height: 100vh;
 }
 .navbar{
-    position: relative;
+    position: fixed;
     top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    background-color: inherit;
     padding: 0 24px;
     color: white;
-    font-family: Adieu;
-    font-weight: lighter;
+    font-family: Adieu-light;
     margin: 0 auto;
     width: 85%;
     height: 65px;
@@ -87,8 +129,7 @@ a{
 }
 .home{
     font-size: 26px;
-    font-weight: bold;
-
+    font-family: Adieu-bold;
 }
 .title{
     position: absolute;
@@ -96,13 +137,13 @@ a{
     top: 50%;
     transform: translate(-50%, -65%);
     font-size: 100px;
-    font-weight: bold;
-    font-family: Adieu;
+    line-height: 75%;
+    font-family: Adieu-bold;
     color: white;
 }
 .title p {
     font-size: 36px;
-    font-weight: lighter;
+    font-family: Adieu-light;
     text-align: center;
 }
 
@@ -171,12 +212,11 @@ a{
 }
 .buttons{
     display: flex;
-    font-weight: lighter;
 }
 .video{
     position: absolute;
-    height: 60vh;
-    width: 800px;
+    height: 65vh;
+    width: 900px;
     top: 50%;
     left: 50%;      
     transform: translate(-50%, -50%);
@@ -187,25 +227,43 @@ a{
     opacity: 1;
 }
 
-
-
-.second-screen{
+.caratteristiche{
+    width: 94%;
+    position: absolute;
+    margin: 7vh 3%;
+    border-radius: 40px;
+    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
 }
-.mockup{
-    width: 300px;
-    height: 500px;
-    background: url('../media/mockup.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+.toggle{
+    position: absolute;
+    top: 0%;
+    transform: translate(0, -50%);
+    border-radius: 40px;
+    filter: drop-shadow(0px 2px 9px rgba(0, 0, 0, 0.05));
+    width: 25%;
+    height: 64px;
+    margin: 0vh auto;
+    background-color: white;
 }
-.white{
-    background-color: red;
-    width: 100vw;
-    height: 400px;
+.interessi{
+    height: 70%;
+    width: 30%;
+    margin: 0 3vh;
+    cursor: pointer;
+    border-bottom: 3px solid #EFEFEF;
+}
+.colleghi{
+    height: 70%;
+    width: 30%;
+    margin: 0 3vh;
+    cursor: pointer;
+    border-bottom: 3px solid #EFEFEF;
+    padding-bottom: 3px;
+}
+.selected{
+    border-bottom: 3px solid var(--first-color);
 }

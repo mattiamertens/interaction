@@ -1,7 +1,7 @@
-$(window).scroll(function (e) {
-    var currentScrollPosition = $(window).scrollTop();
-    console.log(currentScrollPosition);
-});
+// $(window).scroll(function (e) {
+//     var currentScrollPosition = $(window).scrollTop();
+//     console.log(currentScrollPosition);
+// });
 
 // Check native Lazy-loading
 if ('loading' in HTMLImageElement.prototype) {
@@ -195,7 +195,9 @@ function toggleViewInt(){
      $('.colleghi').removeClass('selected');
      $('.svg-rect').addClass('selected-svg');
      $('.svg-circle').removeClass('selected-svg');
-    }   
+    }
+    $('.colleghi-card').hide();
+    $('.interessi-card').show();
 }
 function toggleViewCol(){
     var toggleColleghi = $('.colleghi');
@@ -204,7 +206,9 @@ function toggleViewCol(){
         $('.interessi').removeClass('selected');
         $('.svg-circle').addClass('selected-svg');
         $('.svg-rect').removeClass('selected-svg');
-    }   
+    }
+    $('.interessi-card').hide();
+    $('.colleghi-card').show();
 }
 
 
@@ -214,57 +218,80 @@ let controller = new ScrollMagic.Controller();
 
 // Add timeline
 let tl2 = anime.timeline({autoplay: false});
+let tl3 = anime.timeline({autoplay: false});
+let tl4 = anime.timeline({autoplay: false});
 
 // Add animations
 let s2a1 = {
-  targets: '#two .elem img',
-  scale: [0.7,0.25],
+  targets: '#iphone-mockup',
+  scale: [1.1, 0.55],
   duration: 700,
   delay: 0,
   easing: 'easeInOutSine',
   translateY: {
-    value: ['40%', '0%'],}
-
-
+    value: ['30%', '-10%'],}
 };
 
-let s2a2 = {
-  targets: '#two .elem img',
-  scale: 0.25,
-  duration: 500,
-};
+let s3a1 = {
+    targets: '.text-left',
+    translateX: {
+        value: ['0%', '45%'],
+    },
+    easing: 'linear',
+    delay: 700,
+    duration: 200,
+}
+let s4a1 = {
+    targets: '.text-right',
+    translateX: {
+        value: ['0%', '-45%'],
+    },
+    easing: 'linear',
+    delay: 700,
+    duration: 200,
+}
 
 // Add children
-tl2.add(s2a1).add(s2a2);
+// tl2.add(s2a1);
+tl2.add(s2a1);
+tl3.add(s3a1);
+tl4.add(s4a1);
 
 // Get section height
-let twoHeight = document.getElementById("two").clientHeight;
-console.log('twoHeight: ' + twoHeight);
+// let twoHeight = document.getElementById("two").clientHeight;
+// console.log('twoHeight: ' + twoHeight);
 
-//------------------
-//SCENE 2
-//------------------
-
-//Add second scrollmagic scene
+//Add scrollmagic scene
 let scene2 = new ScrollMagic.Scene({
-  triggerElement: "#two",
-  duration: 4500,
-  triggerHook: 0,
+  triggerElement: "#smWrapper",
+  duration: 1500,
+  triggerHook: 0.1,
 })
 
 // Add debug indicators
-.addIndicators({
-  colorTrigger: "black",
-  colorStart: "blue",
-  colorEnd: "red",
-  indent: 10
-})
+// .addIndicators({
+//   colorTrigger: "black",
+//   colorStart: "blue",
+//   colorEnd: "red",
+//   indent: 10
+// })
 
 // Trigger animation timeline
 //Use scroll position to play animation
 .on("progress", function (event) {
   tl2.seek(tl2.duration * event.progress);
+  tl3.seek(tl3.duration * event.progress);
+  tl4.seek(tl4.duration * event.progress);
 })
-
-.setPin('#two')
+.setPin('#smWrapper')
 .addTo(controller);
+
+$(document).ready(function(){
+    $('.category-carousel').slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+});

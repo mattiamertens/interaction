@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
     <title>Wobble</title>
 </head>
 <body>
@@ -47,7 +50,6 @@
     
     <div class="caratteristiche flex-display-center-center">
         <div class="toggle flex-display-center-center">
-
             <div class="interessi flex-display-center-center selected"> 
                 <svg width="49" height="24" viewBox="0 0 49 24" fill="#4151DA" xmlns="http://www.w3.org/2000/svg">
                     <rect y="8.72754" class="svg-rect selected-svg" width="8.72711" height="48.0021" rx="4.36355" transform="rotate(-90 0 8.72754)" fill="#EFEFEF"/>
@@ -62,7 +64,43 @@
             </div>
         </div>
 
-        <img data-src="media/mockup.png" alt="" loading="lazy" class="lazyload">
+        <div class="interessi-card flex-display-center-center">
+            <p class="section-title"> Caratteristiche </p>
+            <p class="splash-title"> Conosci colleghi con i tuoi stessi interessi </p>
+
+            <section id="smWrapper">                               
+                <div class="app-wrapper flex-display-center-center">
+                    <img id='iphone-mockup' src="media/mockup.png"/>
+                </div>
+                
+                <div class="text-left">Grazie a Wobble scoprirai un nuovo modo di vivere le tue pause caffè! 
+                    Accedi, avvia una chiamata e conosci i tuoi colleghi da nuove differenti e stimolanti prospettive.
+                </div>
+                <div class="text-right">L’applicazione ti permette di entrare in contatto con nuove persone, 
+                    indagando i tuoi interessi da nuovi intriganti punti di vista o aiutandoti a scoprire nuove passioni!
+                </div>
+            </section>
+
+            <div class="category-carousel">
+                <div>Content 1</div>
+                <div>Content 2</div>
+                <div>Content 3</div>
+                <div>Content 4</div>
+                <div>Content 5</div>
+                <div>Content 6</div>
+                <!-- <div class="icons-slider icon_1">Content 1</div>
+                <div class="icons-slider icon_2">Content 2</div>
+                <div class="icons-slider icon_3">Content 3</div>
+                <div class="icons-slider icon_4">Content 4</div>
+                <div class="icons-slider icon_5">Content 5</div>
+                <div class="icons-slider icon_6">Content 6</div> -->
+            </div>
+        </div>
+        
+        <div class="colleghi-card flex-display-center-center">
+            <p class="section-title"> Caratteristiche </p>
+            <p class="splash-title"> Scegli chi contattare a seconda di quanto vi conoscete </p>
+        </div>
     </div>
 
 
@@ -74,6 +112,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'></script>
 <script src="js/script.js"></script>
+<script src="js/slick.js"></script>
+
 
 </body>
 </html>

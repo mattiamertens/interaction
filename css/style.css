@@ -217,9 +217,9 @@ a{
 .caratteristiche{
     width: 94%;
     position: absolute;
-    margin: 7vh 3%;
+    margin: 10vh 3%;
     border-radius: 40px;
-    background-color: red;
+    background-color: white;
     flex-direction: column;
 }
 .toggle{
@@ -253,4 +253,53 @@ a{
 }
 .selected-svg{
     fill: var(--first-color);
+}
+
+.interessi-card{
+    flex-direction: column;
+}
+.colleghi-card{
+    flex-direction: column;
+    display: none;
+}
+.section-title{
+    font-family: Adieu-light;
+    margin: 11vh 0 8vh;
+}
+.splash-title{
+    font-family: Adieu-bold;
+    font-size: 45px;
+    width: 70%;
+    text-align: center;
+}
+
+#smWrapper {
+    height: 100vh;
+    width: 100%;
+}
+#iphone-mockup{
+    max-width: 50%;
+}
+.app-wrapper{
+    height: 100vh;
+
+    margin: 20px 0;
+}
+.text-left{
+    max-width: 17%;
+    position: relative;
+    top: -80%;
+    left: 2%;
+}
+.text-right{
+    max-width: 17%;
+    position: relative;
+    top: -70%;
+    left: 81%;
+}
+
+.category-carousel{
+    max-width: 900px;
+    height: 200px;
+    margin: 0 0 3vh 0;
 }

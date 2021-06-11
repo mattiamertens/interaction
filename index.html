@@ -15,12 +15,12 @@
         <div class="navbar flex-display-sb-center">
             <div class="home"><a href="index.html"> W </a></div>
             <div class="sections">
-                <a href="">Caratteristiche</a>
-                <a href="">Piani e prezzi</a>
+                <a href="#caratteristiche">Caratteristiche</a>
+                <a href="#pricing">Piani e prezzi</a>
                 <a href="">Cosa dicono di noi</a>
                 <a href="">FAQ</a>
             </div>
-            <div class="subscribe button flex-display-center-center btn-light-primary">Iscriviti</div>
+            <a href="subscribe.html"> <div class="subscribe button flex-display-center-center btn-light-primary">Iscriviti</div> </a>
         </div>
 
         <div class="image-container">
@@ -42,13 +42,13 @@
             </div>
             <div class="buttons">
                 <div class="video-btn button flex-display-center-center btn-light-secondary" id="player">Guarda il video</div>
-                <div class="video-btn button flex-display-center-center btn-light-tertiary">Scopri di più</div>
+                <a href="#caratteristiche" id="discover"> <div class="video-btn button flex-display-center-center btn-light-tertiary">Scopri di più</div> </a>
             </div>
             
         </div>
     </div>
     
-    <div class="caratteristiche flex-display-center-center">
+    <div class="caratteristiche flex-display-center-center" id="caratteristiche">
         <div class="toggle flex-display-center-center">
             <div class="interessi flex-display-center-center selected"> 
                 <svg width="49" height="24" viewBox="0 0 49 24" fill="#4151DA" xmlns="http://www.w3.org/2000/svg">
@@ -128,25 +128,56 @@
         </div>
     </div>
     
-    <div class="pricing flex-display-center-center">
+    <div class="pricing flex-display-center-center" id="pricing">
         <p class="section-title"> Piani e prezzi </p>
         <p class="splash-title"> Scegli il piano migliore per la tua azienda </p>
         <div class="card-wrapper flex-display-center-center">
-
             <div class="card flex-display-center-center">
                 <div class="head-section flex-display-center-center"> <span>Starter</span> <br> 50-100 dipendenti</div>
-                <div class="price-section">30€ <br> <span>*per mese</span></div>
-                <div class="subscribe button flex-display-center-center btn-light-primary">Acquista</div>
+                <div class="price-section">29.99€ <br> <span>*per mese</span></div>
+                <div class="subscribe button_secondary flex-display-center-center btn-dark-primary" style="top: -40px;">Acquista</div>
             </div>
             <div class="card flex-display-center-center">
-                <div class="head-section">Starter <br> 50-100 dipendenti</div>
-                <div class="head-section">30€ per mese</div>
-                <div class="subscribe button flex-display-center-center btn-light-primary">Acquista</div>
+                <div class="head-section flex-display-center-center"> <span>Business</span> <br> 100-150 dipendenti</div>
+                <div class="price-section">49.99€ <br> <span>*per mese</span></div>
+                <div class="subscribe button_secondary flex-display-center-center btn-dark-primary">Acquista</div>
             </div>
             <div class="card flex-display-center-center">
-                <div class="head-section">Starter <br> 50-100 dipendenti</div>
-                <div class="head-section">30€ per mese</div>
-                <div class="subscribe button flex-display-center-center btn-light-primary">Acquista</div>
+                <div class="head-section flex-display-center-center"> <span>Enterprise</span> <br> 151-250 dipendenti</div>
+                <div class="price-section">69.99€ <br> <span>*per mese</span></div>
+                <div class="subscribe button_secondary flex-display-center-center btn-dark-primary">Acquista</div>
+            </div>
+        </div>
+        <p>*sottoscrizione annuale</p>
+    </div>
+
+    <div class="review flex-display-center-center" id="review">
+        <p class="section-title"> Cosa dicono di noi </p>
+        <p class="splash-title"> Chi ci ha già scelto </p>
+
+        <div class="review-wrapper flex-display-center-center">
+
+            <div class="review-card flex-display-center-center">
+                <div class="text-review flex-display-center-center"> 
+                    “Essendo ProFarma un’azienda che lavora per la maggior parte in via remota, 
+                    Wobble ci aiuta a rafforzare le connessioni e il team building tra colleghi!” 
+                </div>
+                <div class="review-person flex-display-center-center">
+                    <div class="person-photo"></div>
+                    <div class="person-bio"></div>
+                </div>
+            </div>
+
+            <div class="review-card flex-display-center-center">
+                <div class="text-review flex-display-center-center"> 
+                    
+                </div>
+            </div>
+
+            <div class="review-card flex-display-center-center">
+                <div class="text-review flex-display-center-center"> 
+                    
+                </div>
             </div>
 
         </div>

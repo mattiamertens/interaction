@@ -82,9 +82,20 @@ a{
     font-family: Adieu-bold;
     cursor: pointer;
 }
+.button_secondary{
+    border-radius: 50px;
+    height: 39px;
+    width: 160px;
+    font-family: Neurial Grotesk medium;
+    cursor: pointer;
+}
 .btn-light-primary{
     background-color: #fff;
     color: var(--first-color);
+}
+.btn-dark-primary{
+    background-color: var(--first-color);
+    color: white;
 }
 .btn-light-secondary{
     border: 1px solid white;
@@ -272,6 +283,7 @@ a{
 .splash-title{
     font-family: Adieu-bold;
     font-size: 45px;
+    line-height: 60px;
     width: 70%;
     text-align: center;
 }
@@ -346,29 +358,26 @@ a{
     font-size: 30px;
     margin-bottom: 2vh;
 }
-/* .iphone-wrapper{
-    background-image: url('../media/mockup.png');
-    width: 30%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
+
+
+/* PRICING SECTION  */
 .pricing{
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
-    background-color: violet;
 }
 .card-wrapper{
     width: 80%;
+    margin: 8vh 0 2vh;
 }
 .card{
     height: 380px;
     width: 345px;
     margin: 0 8px;
     flex-direction: column;
-    border: 1px solid black;
-    border-radius: 20px;
+    border: 1px solid var(--first-color);
+    border-radius: 22px;
     justify-content: space-between;
+    padding-bottom: 3vh;
 }
 .head-section{
     background-color: var(--first-color);
@@ -390,4 +399,24 @@ a{
 }
 .price-section span {
     font-size: 10px;
+}
+
+
+/* REVIEW SECTION */
+.review{
+    flex-direction: column;
+    margin: 15vh 0;
+    height: 100vh;
+    background-color: violet;
+}
+.review-wrapper{
+    width: 80%;
+    height: 200px;
+
+    border: 1px solid white;
+}
+.review-card{
+    height: 100%;
+    width: 33%;
+    background-color: turquoise;
 }

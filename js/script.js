@@ -19,6 +19,13 @@ if ('loading' in HTMLImageElement.prototype) {
     document.body.appendChild(script);
 }
 
+// SCROLL TO SECTION
+$('.sections a, #discover').click(function(){
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 class HoverButton {
     constructor(el) {
     this.el = el;

@@ -188,6 +188,8 @@ $('#player').click(function () {
 //Toggle button
 $('.interessi').click(toggleViewInt);
 $('.colleghi').click(toggleViewCol);
+
+// Hide collegues - show INTERESTS
 function toggleViewInt(){
     var toggleInteressi = $('.interessi');
     if(!toggleInteressi.hasClass("selected")){
@@ -196,9 +198,12 @@ function toggleViewInt(){
      $('.svg-rect').addClass('selected-svg');
      $('.svg-circle').removeClass('selected-svg');
     }
-    $('.colleghi-card').hide();
-    $('.interessi-card').show();
+    // $('.interessi-card').addClass('');    
+    $('.colleghi-card').addClass('not-displayed');
+    $('.interessi-card').removeClass('not-displayed');
 }
+
+// Hide interests - show COLLEGUES
 function toggleViewCol(){
     var toggleColleghi = $('.colleghi');
     if(!toggleColleghi.hasClass('selected')){
@@ -207,8 +212,10 @@ function toggleViewCol(){
         $('.svg-circle').addClass('selected-svg');
         $('.svg-rect').removeClass('selected-svg');
     }
-    $('.interessi-card').hide();
-    $('.colleghi-card').show();
+    $('.interessi-card').addClass('not-displayed');
+    $('.colleghi-card').removeClass('not-displayed');
+    // $('.colleghi-card').show();
+    // $('.interessi-card').hide();
 }
 
 

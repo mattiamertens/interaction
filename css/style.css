@@ -42,7 +42,7 @@
              url('font/Neurial_Grotesk/bold/neurialgrotesk-bold.woff2') format('woff2');
 }
 
-
+/* "TEMPLATE" */
 :root {
     --first-color: #4151DA;
     --bg-color: #EFEFEF;
@@ -53,11 +53,26 @@
     align-items: center; /* all children on cross axis - vertical center*/
     justify-content: center; /* main axis of conatiner - H */
 }
+.flex-display-center-start{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: flex-start; /* main axis of conatiner - H */
+}
+.flex-display-sa-center{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: space-around; /* main axis of conatiner - H */
+}
 .flex-display-sb-center{
     display: flex;
     align-content: center; /* cross axis of container - V */
     align-items: center; /* all children on cross axis - vertical center*/
     justify-content: space-between; /* main axis of conatiner - H */
+}
+.column{
+    flex-direction: column;
 }
 
 *{
@@ -232,7 +247,6 @@ a{
     border-radius: 40px;
     background-color: white;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
 }
 .toggle{
     position: absolute;
@@ -267,12 +281,12 @@ a{
     fill: var(--first-color);
 }
 
-.interessi-card{
+/* .interessi-card{
     flex-direction: column;
 }
 .colleghi-card{
     flex-direction: column;
-}
+} */
 .not-displayed{
     display: none;
 }
@@ -322,13 +336,8 @@ a{
     height: 100%;
 }
 .content_wrapper{
-    display: flex;
     position: relative;
     height: 100%;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
 }
 .content_wrapper img {
     width: 30%;
@@ -337,17 +346,16 @@ a{
 }
 
 .features{
-    margin: 20vh 0;
+    margin: 15vh 0;
     display: flex;
     max-width: 80%;
 }
 .features img{
-    width: 30%;
+    width: 40%;
+    margin-bottom: 30px;
 }
 .start, .join{
-    flex-direction: column;
-    flex-grow: 1;
-    flex-shrink: 1;
+    display: flex;
 }
 .sub-text{
     margin-top: 24px;
@@ -363,7 +371,6 @@ a{
 /* PRICING SECTION  */
 .pricing{
     height: 100vh;
-    flex-direction: column;
 }
 .card-wrapper{
     width: 80%;
@@ -373,16 +380,13 @@ a{
     height: 380px;
     width: 345px;
     margin: 0 8px;
-    flex-direction: column;
     border: 1px solid var(--first-color);
     border-radius: 22px;
-    justify-content: space-between;
     padding-bottom: 3vh;
 }
 .head-section{
     background-color: var(--first-color);
     color: white;
-    flex-direction: column;
     width: 100%;
     height: 30%;
     text-align: center;
@@ -404,19 +408,32 @@ a{
 
 /* REVIEW SECTION */
 .review{
-    flex-direction: column;
     margin: 15vh 0;
     height: 100vh;
     background-color: violet;
 }
 .review-wrapper{
-    width: 80%;
+    width: 90%;
     height: 200px;
-
-    border: 1px solid white;
+    margin: 15vh 0;
 }
 .review-card{
     height: 100%;
-    width: 33%;
-    background-color: turquoise;
+}
+.text-review{
+    width: 80%;
+}
+.review-person{
+    width: 100%;
+    font-size: 12px;
+    margin-left: 3vw;
+}
+.person-photo img{
+    border-radius: 50%;
+}
+.person-bio{
+    margin-left: 2vw;
+}
+.person-bio span{
+    font-family: Neurial Grotesk medium;
 }

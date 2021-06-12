@@ -119,8 +119,12 @@ a{
     text-decoration: underline;
     font-family: Adieu-light;
 }
-
-
+.div_line{
+    width: 95%;
+    height: 2px;
+    background-color: var(--first-color);
+    margin: 0 auto;
+}
 .hero{
     background-color: var(--first-color);
     min-height: 100vh;
@@ -281,18 +285,15 @@ a{
     fill: var(--first-color);
 }
 
-/* .interessi-card{
-    flex-direction: column;
+.interessi-card .section-title{
+    margin: 11vh 0 8vh;
 }
-.colleghi-card{
-    flex-direction: column;
-} */
 .not-displayed{
     display: none;
 }
 .section-title{
     font-family: Adieu-light;
-    margin: 11vh 0 8vh;
+    margin: 0 0 8vh;
 }
 .splash-title{
     font-family: Adieu-bold;
@@ -306,19 +307,21 @@ a{
     height: 100vh;
     width: 100%;
 }
-#iphone-mockup{
-    max-width: 50%;
-}
+
 .app-wrapper{
     height: 100vh;
-
     margin: 20px 0;
+}
+.medium_t_16{
+    font-size: 16px;
+    font-family: Neurial Grotesk medium;
 }
 .text-left{
     max-width: 17%;
     position: relative;
     top: -80%;
     left: 2%;
+    text-align: end;
 }
 .text-right{
     max-width: 17%;
@@ -326,9 +329,9 @@ a{
     top: -70%;
     left: 81%;
 }
-
 .category-carousel{
     max-width: 900px;
+    width: 95%;
     position: relative;
     height: 200px;
 }
@@ -356,6 +359,7 @@ a{
 }
 .start, .join{
     display: flex;
+    align-items: center;
 }
 .sub-text{
     margin-top: 24px;
@@ -367,10 +371,38 @@ a{
     margin-bottom: 2vh;
 }
 
+/* CARD COLLEGHI */
+#smWrapper_c {
+    height: 100vh;
+    width: 100%;
+}
+.text-left_c{
+    max-width: 17%;
+    position: relative;
+    top: -40%;
+    left: 2%;
+    text-align: end;
+}
+.text-right_c{
+    max-width: 17%;
+    position: relative;
+    top: -90%;
+    left: 81%;
+}
+.icone_cerchie{
+    margin: 0 3vw;
+}
+.cerchie{
+    margin-bottom: 1vh;
+}
+.ice-breaker{
+    width: 60%;
+}
+
 
 /* PRICING SECTION  */
 .pricing{
-    height: 100vh;
+    margin: 0 0 7.5vh 0
 }
 .card-wrapper{
     width: 80%;
@@ -408,9 +440,8 @@ a{
 
 /* REVIEW SECTION */
 .review{
-    margin: 15vh 0;
-    height: 100vh;
-    background-color: violet;
+    margin: 7.5vh 0 0;
+    height: auto;
 }
 .review-wrapper{
     width: 90%;
@@ -435,5 +466,26 @@ a{
     margin-left: 2vw;
 }
 .person-bio span{
+    font-family: Neurial Grotesk medium;
+}
+
+/* FAQ SECTION */
+.faq{
+    margin: 7.5vh 0;
+}
+.faq-wrapper{
+    width: 90%;
+    flex-wrap: wrap;
+}
+.faq-card{
+    height: 17vh;
+    width: 40%;
+    margin: 10px 0;
+    padding: 0 2vw;
+    border-radius: 20px;
+    border: 1px solid var(--first-color);
+}
+.faq-card span{
+    width: 65%;
     font-family: Neurial Grotesk medium;
 }

@@ -297,12 +297,6 @@ let scene2 = new ScrollMagic.Scene({
 .addTo(controller);
 
 
-
-
-
-
-
-
 //Iphone animation
 // Add scrollmagic controller
 let controller_c = new ScrollMagic.Controller();

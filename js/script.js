@@ -188,8 +188,17 @@ onLeave() {
 const btnvideo = document.querySelector('.video');
 new HoverButtonVideo(btnvideo);
 
+// Video player
 $('#player').click(function () {
     $('.video').toggleClass('show')
+});
+$('.close-button').click(function() {
+    $('.video').removeClass('show')
+});
+$(document).keyup(function(e) {
+    if (e.key === "Escape") {
+     $('.video').removeClass('show')
+   }
 });
 
 //Toggle button
@@ -238,12 +247,12 @@ let tl4 = anime.timeline({autoplay: false});
 // Add animations
 let s2a1 = {
   targets: '#iphone-mockup',
-  scale: [1.1, 0.55],
+  scale: [1.1, 0.5],
   duration: 700,
   delay: 0,
   easing: 'easeInOutSine',
   translateY: {
-    value: ['30%', '-10%'],}
+    value: ['30%', '-6%'],}
 };
 
 let s3a1 = {

@@ -100,6 +100,7 @@ a{
     border-radius: 50px;
     height: 39px;
     width: 13vw;
+    max-width: 157px;
     font-family: Adieu-bold;
     cursor: pointer;
     font-size: 00.83rem;
@@ -153,33 +154,23 @@ a{
     border-radius: 45px;
     font-size: 0.83rem;
 }
-
-.subscribe{
-    width: 13vw;
-}
 .sections{
     width: 63%;
     display: flex;
     justify-content: space-around;
 }
-.home{
-    font-size: 26px;
-    font-family: Adieu-bold;
+.home img{
+    width: 32px;
 }
 .title{
     position: absolute;
+    width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -65%);
-    font-size: 100px;
-    line-height: 75%;
-    font-family: Adieu-bold;
-    color: white;
 }
-.title p {
-    font-size: 36px;
-    font-family: Adieu-light;
-    text-align: center;
+.title img{
+    width: 65%;
 }
 
 .image-container {
@@ -245,14 +236,20 @@ a{
     left: 50%;      
     transform: translate(-50%, -50%);
     background-color: black;
-    user-select: none;
-    pointer-events: none;
-    opacity: 0;
-    z-index: -1;
+    visibility: hidden;
+}
+.close-button{
+    position: relative;
+    left: 97%;
+    top: 3%;
+    height: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
 }
 .show{
     opacity: 1;
     z-index: 2;
+    visibility: visible;
 }
 
 .caratteristiche{
@@ -270,7 +267,7 @@ a{
     border-radius: 40px;
     filter: drop-shadow(0px 2px 9px rgba(0, 0, 0, 0.05));
     width: 25%;
-    height: 8.5vh;
+    height: 64px;
     margin: 0vh auto;
     background-color: white;
 }

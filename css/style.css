@@ -546,3 +546,9 @@ a{
 .download-badge img{
     width: 134px;
 }
+
+@media screen and (min-width: 1440px) {
+    .sub_t span {
+        width: 60%;
+    }
+}

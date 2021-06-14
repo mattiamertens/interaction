@@ -249,7 +249,7 @@ let s2a1 = {
 let s3a1 = {
     targets: '.text-left',
     translateX: {
-        value: ['0%', '45%'],
+        value: ['0%', '95%'],
     },
     easing: 'linear',
     delay: 700,
@@ -258,7 +258,7 @@ let s3a1 = {
 let s4a1 = {
     targets: '.text-right',
     translateX: {
-        value: ['0%', '-45%'],
+        value: ['0%', '-95%'],
     },
     easing: 'linear',
     delay: 700,

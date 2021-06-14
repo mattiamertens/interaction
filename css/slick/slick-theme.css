@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 33%;
 
     display: block;
 
@@ -80,7 +80,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 10px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -98,7 +98,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 10px;
 }
 [dir='rtl'] .slick-next
 {
@@ -143,7 +143,7 @@
 
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin: 0 3px;
     padding: 0;
 
     cursor: pointer;
@@ -180,7 +180,7 @@
 {
     font-family: 'slick';
     font-size: 6px;
-    line-height: 20px;
+    line-height: 10px;
 
     position: absolute;
     top: 0;
@@ -201,6 +201,6 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    font-size: 10px;
+    font-size: 9px;
     color: #4151da;
 }

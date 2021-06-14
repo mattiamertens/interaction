@@ -59,6 +59,12 @@
     align-items: center; /* all children on cross axis - vertical center*/
     justify-content: flex-start; /* main axis of conatiner - H */
 }
+.flex-display-sa-start{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: flex-start; /* all children on cross axis - vertical center*/
+    justify-content: space-around; /* main axis of conatiner - H */
+}
 .flex-display-sa-center{
     display: flex;
     align-content: center; /* cross axis of container - V */
@@ -507,7 +513,39 @@ a{
     justify-content: flex-start;
 }
 .faq-card span{
-    width: 65%;
+    width: 80%;
     font-family: Neurial Grotesk medium;
     margin-bottom: 2vh;
+}
+
+/* FOOTER */
+.footer{
+    max-width: 100%;
+    background-color: var(--first-color);
+    font-size: 0.83rem;
+    padding: 3vh;
+    color: white;
+}
+.display-info{
+    width: 85%;
+    margin: 0 auto;
+}
+.contacts a span{
+    font-family: Neurial Grotesk bold;
+}
+.socials{
+    margin: 3vh 0 0;
+}
+.socials a svg{
+    fill: white;
+}
+.socials a svg:hover{
+    fill: var(--bg-color);
+}
+.policy span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.download-badge img{
+    width: 134px;
 }

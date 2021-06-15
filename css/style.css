@@ -48,7 +48,7 @@
     --bg-color: #EFEFEF;
 }
 .active{
-    background-color: bisque;
+    border-bottom: 1px solid white;
 }
 .flex-display-center-center{
     display: flex;
@@ -336,7 +336,7 @@ a{
 .medium_t_16{
     font-size: 16px;
     font-family: Neurial Grotesk medium;
-    max-width: 13%;
+    max-width: 14%;
 }
 .text-left{
     position: relative;
@@ -414,14 +414,14 @@ a{
 .text-left_c{
     max-width: 17%;
     position: relative;
-    top: -40%;
+    top: -55%;
     left: 2%;
     text-align: end;
 }
 .text-right_c{
     max-width: 17%;
     position: relative;
-    top: -90%;
+    top: -85%;
     left: 81%;
 }
 .icone_cerchie{
@@ -510,13 +510,13 @@ a{
 /* FAQ SECTION */
 .faq{
     margin: 7.5vh 0;
+    height: 60vh;
 }
 .faq-wrapper{
     width: 95%;
     margin-top: 3vh;
 }
 .faq-card{
-    height: 17vh;
     width: 28%;
     padding: 1.7vh 1.7vw;
     border-radius: 20px;
@@ -526,9 +526,13 @@ a{
     justify-content: flex-start;
 }
 .faq-card span{
-    width: 80%;
+    width: 75%;
     font-family: Neurial Grotesk medium;
     margin-bottom: 2vh;
+}
+.answer{
+    width: 90%;
+    font-size: 0.86rem;
 }
 
 /* FOOTER */

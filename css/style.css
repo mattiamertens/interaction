@@ -377,6 +377,7 @@ a{
 .start, .join{
     display: flex;
     margin-bottom: 10vh;
+    align-items: flex-start;
 }
 .join{
     justify-content: center;
@@ -386,6 +387,7 @@ a{
 .sub_t{
     display: flex;
     width: 70%;
+
 }
 .sub_t span{
     width: 80%;

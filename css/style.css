@@ -89,7 +89,6 @@
     padding: 0;
 }
 body{
-    min-height: 3000px;
     font-family: Neurial Grotesk regular;
     font-size: 1rem;
     background-color: white;
@@ -146,7 +145,7 @@ a{
     left: 50%;
     transform: translate(-50%);
     z-index: 999;
-    background-color: inherit;
+    background-color: var(--first-color);
     padding: 0 24px;
     color: white;
     font-family: Adieu-light;
@@ -567,6 +566,74 @@ a{
 .download-badge img{
     width: 134px;
 }
+
+
+/* SUBSCRIBE FORM */
+.form-wrapper{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.form-txt{
+    width: 30%;
+}
+.form-txt span{
+    font-family: Adieu-bold;
+    font-size: 28px;
+    line-height: 34px;
+}
+.form-card{
+    border: 1px solid var(--first-color);
+    border-radius: 16px;
+    width: 60%;
+    padding: 3vh;
+}
+.form-card p{
+    text-align: end;
+    font-size: 11px;
+    margin:0 1vh 4vh 0;
+}
+.client-info{
+    display: flex;
+}
+input{
+    border-style: hidden;
+    width: 48%;
+    height: 34px;
+    margin: 1vh 1vh;
+    padding: 0 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4 
+}
+input:placeholder{
+    color: #c4c4c4;
+}
+.personal{
+    width: 100%;
+}
+.email{
+    width: auto;
+}
+.captcha{
+    width: 50%;
+    align-self: center;
+    margin: 5% 0;
+}
+.submit{
+    align-self: center;
+    margin-top: 3%;
+}
+
+
+
+
 
 @media screen and (min-width: 1440px) {
     .sub_t span {

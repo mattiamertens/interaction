@@ -33,6 +33,7 @@ $('.sections a, #discover').click(function(){
 // UNDERLINE CURRENT NAVBAR SECTION
 const sections = document.querySelectorAll(".u_section");
 const navLi = document.querySelectorAll(".navbar .nav-link");
+const winH =  window.innerHeight;
 
 window.addEventListener("scroll", () => {
   let current = '';
@@ -40,7 +41,7 @@ window.addEventListener("scroll", () => {
     const sectionTop = element.offsetTop;
     const sectionHeight = element.clientHeight;
      
-    if (pageYOffset >= sectionTop - sectionHeight) {
+    if (pageYOffset >= sectionTop - sectionHeight && pageYOffset > winH) {
       current = element.getAttribute("id");
     }
   });

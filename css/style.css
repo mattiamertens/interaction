@@ -317,6 +317,9 @@ a{
 .interessi-card .section-title{
     margin: 11vh 0 8vh;
 }
+.colleghi-card .section-title{
+    margin: 11vh 0 8vh;
+}
 .not-displayed{
     display: none;
 }

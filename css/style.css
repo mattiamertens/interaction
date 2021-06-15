@@ -249,6 +249,7 @@ a{
     transform: translate(-50%, -50%);
     background-color: black;
     visibility: hidden;
+    z-index: 1001;
 }
 .close-button{
     position: relative;
@@ -258,11 +259,19 @@ a{
     transform: translateX(-50%);
     cursor: pointer;
 }
+.darken{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
 .show{
     opacity: 1;
-    z-index: 2;
+    z-index: 1000;
     visibility: visible;
 }
+
 
 .caratteristiche{
     width: 94%;

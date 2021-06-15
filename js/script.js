@@ -226,7 +226,7 @@ onHover(x, y) {
     duration: 0.4
     });
 
-    this.el.style.zIndex = 10;
+    this.el.style.zIndex = 1001;
 }
 onLeave() {
     gsap.to(this.el, {
@@ -237,7 +237,7 @@ onLeave() {
     duration: 0.7
     });
 
-    this.el.style.zIndex = 2;
+    this.el.style.zIndex = 1001;
 }
 }
 const btnvideo = document.querySelector('.video');
@@ -245,14 +245,14 @@ new HoverButtonVideo(btnvideo);
 
 // Video player
 $('#player').click(function () {
-    $('.video').toggleClass('show')
+    $('.video, .darken').toggleClass('show')
 });
 $('.close-button').click(function() {
-    $('.video').removeClass('show')
+    $('.video, .darken').removeClass('show')
 });
 $(document).keyup(function(e) {
     if (e.key === "Escape") {
-     $('.video').removeClass('show')
+     $('.video, .darken').removeClass('show')
    }
 });
 

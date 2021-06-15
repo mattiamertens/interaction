@@ -47,6 +47,9 @@
     --first-color: #4151DA;
     --bg-color: #EFEFEF;
 }
+.active{
+    background-color: bisque;
+}
 .flex-display-center-center{
     display: flex;
     align-content: center; /* cross axis of container - V */
@@ -379,26 +382,28 @@ a{
     font-family: Adieu-bold;
     font-size: 2.8rem;
     line-height: 50px;
-    margin-top: 10vh;
 }
 .start, .join{
     display: flex;
     margin-bottom: 10vh;
     align-items: flex-start;
     flex-direction: row;
+    justify-content: center;
 }
 .join{
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-top: -22vw;
+    /* justify-content: flex-end; */
 }
 .sub_t{
-    display: flex;
-    width: 70%;
+    width: 45%;
 
 }
 .sub_t span{
     width: 80%;
+}
+.txt-right-al{
+    text-align: right;
 }
 
 /* CARD COLLEGHI */

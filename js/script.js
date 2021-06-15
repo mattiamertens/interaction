@@ -1,7 +1,28 @@
-// $(window).scroll(function (e) {
-//     var currentScrollPosition = $(window).scrollTop();
-//     console.log(currentScrollPosition);
-// });
+// window.onload=function(){
+//     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+//     if (mobile) {
+//         alert("Visit this on a Computer for Better View");              
+//     } else {
+
+//     }
+// }
+// document.body.onload = addElement;
+
+// function addElement () {
+//   // create a new div element
+//   const newDiv = document.createElement("div");
+
+//   // and give it some content
+//   const newContent = document.createTextNode("Hi there and greetings!");
+
+//   // add the text node to the newly created div
+//   newDiv.appendChild(newContent);
+
+//   // add the newly created element and its content into the DOM
+//   const currentDiv = document.getElementById("div1");
+//   document.body.insertBefore(newDiv, currentDiv);
+// }
+
 
 // Check native Lazy-loading
 if ('loading' in HTMLImageElement.prototype) {

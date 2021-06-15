@@ -651,12 +651,6 @@ input:placeholder{
 }
 
 @media screen and (max-width: 768px) {
-    
-}
-@media screen and (max-width: 768px) {
-    
-}
-@media screen and (max-width: 480px) {
     .hero, .caratteristiche, .pricing, .review, .faq, .footer {
         display: none;
     }
@@ -675,4 +669,7 @@ input:placeholder{
         font-family: Adieu-light;
         font-size: 20px;
     }
+}
+@media screen and (max-width: 480px) {
+   
 }

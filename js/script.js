@@ -114,6 +114,9 @@ new HoverButton(btn5);
 const btn6 = document.querySelector('.custom-element:nth-child(6)');
 new HoverButton(btn6);
 
+const btn7 = document.querySelector('.custom-element:nth-child(7)');
+new HoverButton(btn7);
+
 
 // Videomove on mouse hover
 class HoverButtonVideo {

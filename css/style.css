@@ -860,7 +860,6 @@ input:placeholder{
     } 
     .faq-wrapper{
         flex-direction: column;
-
     }
     .faq-card{
         box-sizing: border-box;

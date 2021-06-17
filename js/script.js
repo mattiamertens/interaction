@@ -275,7 +275,7 @@ function toggleViewCol(){
 // window.addEventListener('resize', dioBono());
 // window.addEventListener('load', dioBono1());
 
-window.addEventListener('resize', function(){
+window.addEventListener('load', function(){
     if(window.innerWidth > 768){
 
     let controller = new ScrollMagic.Controller();

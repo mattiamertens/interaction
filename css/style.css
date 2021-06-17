@@ -663,12 +663,6 @@ input:placeholder{
 }
 
 @media screen and (max-width: 768px) {
-    .hero, .caratteristiche, .pricing, .review, .faq, .footer {
-        display: none;
-    }
-    body{
-        background-color: var(--first-color);
-    }
     .placeholder{
         display: flex;
         height: 100vh;
@@ -683,5 +677,115 @@ input:placeholder{
     }
 }
 @media screen and (max-width: 480px) {
-   
+    /* .darken, .pricing, .review, .faq, .footer {
+        display: none;
+    } */
+    body{
+        max-width: 100vw;
+    }
+   .navbar{
+        display: none;
+       box-sizing: border-box;
+        left: 0;
+        transform: translate(0);
+   }
+   .sections{
+       display: none;
+   }
+    .image-container{
+        border: 1px solid red;
+   }
+   .custom-element{
+       width: auto;
+       height: auto;
+   }
+    .custom-element img {
+       width: 100px;
+       height: 100px;
+   }
+   .custom-element:nth-child(1) {
+        left: 88%;
+        top: 32%;
+    }
+    .custom-element:nth-child(2) {
+        left: -16%;
+        top: 61%;
+    }
+    .custom-element:nth-child(3) {
+        left: 36%;
+        top: 24%;
+    }
+    .custom-element:nth-child(4) {
+        left: -44%;
+        top: 33%;
+    }
+    .custom-element:nth-child(5) {
+        left: 0%;
+        top: 32%;
+    }
+    .custom-element:nth-child(6) {
+        left: 44%;
+        top: 61%;
+    }
+    .custom-element:nth-child(7) {
+        left: 40%;
+        top: 37%;
+    }
+   .video{
+       visibility: hidden;
+       width: 300px;
+   }
+   .title{
+        width: 80%;
+    }
+    .title img{
+        width: 100%;
+    }
+    .wrapper{
+        flex-direction: column;
+        top: 68%;
+        width: 75%;
+    }
+    .description-text{
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    .buttons{
+        flex-direction: column;
+        /* white-space: nowrap; */
+    }
+    .button {
+        border-radius: 50px;
+        height: 39px;
+        width: auto;
+        padding: 0 20px;
+        max-width: 157px;
+        font-family: Adieu-bold;
+        cursor: pointer;
+        font-size: 00.83rem;
+    }
+    .toggle{
+        width: auto;
+    }
+    .interessi, .colleghi{
+        width: 23%;
+    }
+    .splash-title{
+        font-size: 1.6rem;
+        line-height: unset;
+    }
+    
+
+
+
+
+
+
+
+    #smWrapper{
+    }
+
+    .card-wrapper{
+        flex-direction: column;
+    }
 }

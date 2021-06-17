@@ -266,6 +266,15 @@ function toggleViewCol(){
 //Iphone animation
 // Add scrollmagic controller
 
+// var dioBono = function(){
+//     alert('aaa')
+// }
+// var dioBono1 = function(){
+//     alert('bbbb')
+// }
+// window.addEventListener('resize', dioBono());
+// window.addEventListener('load', dioBono1());
+
 window.addEventListener('resize', function(){
     if(window.innerWidth > 768){
 
@@ -417,8 +426,23 @@ $(document).ready(function(){
     $('.category-carousel').slick({
         dots: true,
         infinite: true,
-        arrows: true,
+        arrows: false,
         slidesToShow: 3,
         slidesToScroll: 3
     });
+});
+
+
+window.addEventListener('load', function(){
+    if(window.innerWidth < 768){
+        $(document).ready(function(){
+            $('.review-wrapper').slick({
+                dots: true,
+                infinite: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    }
 });

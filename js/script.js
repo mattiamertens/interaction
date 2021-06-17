@@ -444,5 +444,13 @@ window.addEventListener('load', function(){
                 slidesToScroll: 1
             });
         });
+
+        // MENU TOGGLE
+        $('.menu_icon').click(function(){
+            $('.menu').toggleClass('menu_vis');
+        });
+        $('.nav-link').click(function(){
+            $('.menu').removeClass('menu_vis');
+        })
     }
 });

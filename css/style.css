@@ -1170,7 +1170,6 @@ input:placeholder{
         margin: 24px 0;
     }
     .start, .join{
-        /* align-items: center; */
         flex-direction: column;
     }
     .join{

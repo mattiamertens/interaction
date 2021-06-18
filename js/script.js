@@ -260,7 +260,7 @@ function toggleViewCol(){
 //Iphone animation
 // Add scrollmagic controller
 
-window.addEventListener('resize', function(){
+window.addEventListener('load', function(){
     if(window.innerWidth > 768){
 
     let controller = new ScrollMagic.Controller();

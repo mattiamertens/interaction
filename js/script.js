@@ -320,14 +320,6 @@ window.addEventListener('load', function(){
         triggerHook: 0.1,
     })
 
-    // Add debug indicators
-    // .addIndicators({
-    //   colorTrigger: "black",
-    //   colorStart: "blue",
-    //   colorEnd: "red",
-    //   indent: 10
-    // })
-
     // Trigger animation timeline
     //Use scroll position to play animation
     .on("progress", function (event) {
@@ -408,21 +400,23 @@ window.addEventListener('load', function(){
     })
     .setPin('#smWrapper_c')
     .addTo(controller_c);
-}
-});
+    }
 
-
-
-// CAROUSEL
-$(document).ready(function(){
-    $('.category-carousel').slick({
-        dots: true,
-        infinite: true,
-        arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 3
+    // CAROUSEL
+    $(document).ready(function(){
+        $('.category-carousel').slick({
+            dots: true,
+            infinite: true,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
     });
+
 });
+
+
+
 
 
 window.addEventListener('load', function(){

@@ -13,6 +13,7 @@ if ('loading' in HTMLImageElement.prototype) {
     document.body.appendChild(script);
 }
 
+
 // SCROLL TO SECTION
 $('.sections a, #discover').click(function(){
     $('html, body').animate({
@@ -266,15 +267,6 @@ function toggleViewCol(){
 //Iphone animation
 // Add scrollmagic controller
 
-// var dioBono = function(){
-//     alert('aaa')
-// }
-// var dioBono1 = function(){
-//     alert('bbbb')
-// }
-// window.addEventListener('resize', dioBono());
-// window.addEventListener('load', dioBono1());
-
 window.addEventListener('load', function(){
     if(window.innerWidth > 768){
 
@@ -444,11 +436,10 @@ window.addEventListener('load', function(){
                 slidesToScroll: 1
             });
         });
-
         // MENU TOGGLE
         $('.menu_icon').click(function(){
             $('.menu').toggleClass('menu_vis');
-            $('body').addClass('fix');
+            $('body').toggleClass('fix');
         });
         $('.nav-link').click(function(){
             $('.menu').removeClass('menu_vis');

@@ -53,12 +53,6 @@
 .active{
     border-bottom: 1px solid white;
 }
-.menu{
-    display: none;
-}
-.menu_icon{
-    display: none;
-}
 .flex-display-center-center{
     display: flex;
     align-content: center; /* cross axis of container - V */
@@ -91,6 +85,13 @@
 }
 .column{
     flex-direction: column;
+}
+.menu{
+    display: none;
+}
+.menu_icon{
+    display: none;
+    background-color: red;
 }
 
 *{
@@ -669,23 +670,6 @@ input:placeholder{
 }
 
 @media screen and (max-width: 768px) {
-    .placeholder{
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        padding: 0 5vh;
-    }
-    .alert{
-        color: white;
-        text-align: center;
-        font-family: Adieu-light;
-        font-size: 20px;
-    }
-}
-@media screen and (max-width: 480px) {
-    /* .darken, .pricing, .review, .faq, .footer {
-        display: none;
-    } */
     .div_line{
         width: 90%;
     }
@@ -718,21 +702,24 @@ input:placeholder{
        font-family: Neurial Grotesk medium;
        font-size: 18px;
    }
+   .subscribe_mob{
+        border: 1px solid var(--first-color);
+        background-color: unset;
+        width: auto;
+        color: var(--first-color);
+   }
    .menu_vis{
        left: 0%;
    }
 
    .menu_icon{
+       display: flex;
         position: fixed;
         right: 10%;
         top: 8%;
         box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
         z-index: 10000;
     }
-    
-   /* .sections{
-       display: none;
-   } */
    .image-container{
     transform: translate(-50%, -73%);
    }
@@ -773,9 +760,14 @@ input:placeholder{
         top: 37%;
     }
    .video{
-       visibility: hidden;
-       width: 300px;
+       width: 80%;
+       height: 25%;
    }
+   .close-button {
+    left: 94%;
+    top: -17%;
+    }
+
    .title{
         width: 80%;
         transform: translate(-50%, -105%);
@@ -799,7 +791,303 @@ input:placeholder{
     }
     .button {
         border-radius: 50px;
-        height: 39px;
+        width: auto;
+        padding: 0 20px;
+        max-width: 157px;
+        font-family: Adieu-bold;
+        cursor: pointer;
+        font-size: 00.83rem;
+    }
+    .toggle{
+        width: auto;
+    }
+    .interessi, .colleghi{
+        width: 23%;
+    }
+    .splash-title{
+        font-size: 1.6rem;
+        line-height: 30px;
+        width: 85%;
+    }
+    .app-wrapper{
+        padding: 5vh 0;
+        align-items: flex-start;
+        height: unset;
+    }
+    .text-left{
+        top: 0%;
+        margin-left: 8%;
+        text-align: start;
+        max-width: unset;
+    }
+    .text-right{
+        position: relative;
+        max-width: unset;
+        top: unset;
+        margin-left: 16%;
+    }
+    #smWrapper, #smWrapper_c{
+        height: auto;
+        margin-bottom: 8vh;
+    }
+    .text-left_c{
+        top: 0%;
+        left: 0%;
+        margin-left: 8%;
+        text-align: start;
+        max-width: unset;
+    }
+    .text-right_c{
+        max-width: unset;
+        top: unset;
+        margin-left: 8%;
+        left: 0%;
+    }
+    .cerchie{
+        flex-direction: column;
+    }
+    .icone_cerchie{
+        margin: 5vh 0;
+    }
+    .ice-breaker{
+        flex-direction: column;
+    }
+
+    /* CATEGORIES CAROUSEL */
+    .category-carousel{
+        width: 90vw;
+        margin: 0;
+    }
+    .content_wrapper{
+        height: 70%;
+    }
+    .content_wrapper img{
+        width: unset;
+    }
+    .carousel_icon {
+        height: 200px;
+    }
+
+    .features{
+        margin: 5vh 0;
+    }
+    .features img{
+        width: 50%;
+        margin: 24px 0;
+    }
+    .start, .join{
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .join{
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+    .sub_t{
+        width: auto;
+    }
+    .feature-title{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .card-wrapper{
+        flex-direction: column;
+    }
+    .card{
+        margin: 8px 0;
+    }
+    
+    .review-wrapper{
+        height: auto;
+        width: 80%;
+    }
+    .review-card{
+        box-sizing: border-box;
+        display: flex !important;
+        width: 90% !important;
+        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+        margin: 8px auto;
+        padding: 10px 5px;
+    }  
+    .faq{
+        height: unset;
+    } 
+    .faq-wrapper{
+        flex-direction: column;
+    }
+    .faq-card{
+        box-sizing: border-box;
+        width: 90%;
+        margin: 10px auto;
+        padding: 1.7vh 3vh;
+    }
+    .display-info{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .download-badge{
+        flex-direction: row;
+         margin-top: 2vh;
+    }
+
+
+
+    /* FORM */
+    .form-wrapper {
+        flex-direction: column;
+        height: unset;
+        border-radius: 16px;
+        left: 50%;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .form-txt{
+        width: unset;
+        margin: 0 0 3vh 0;
+    }
+    .form-card{
+        width: 90%;
+        font-size: 10px;
+        margin: 0 0vh 2vh 0;
+    }
+    input{
+        width: 90%;
+    }
+    .personal{
+        flex-direction: column;
+    }
+    .dipendenti{
+        flex-shrink: 2;
+    } 
+}
+
+
+/* CELLPHONE */
+@media screen and (max-width: 480px) {
+    /* .darken, .pricing, .review, .faq, .footer {
+        display: none;
+    } */
+    .div_line{
+        width: 90%;
+    }
+    body{
+        max-width: 100vw;
+    }
+   .navbar{
+       display: none;
+       box-sizing: border-box;
+       left: 0;
+       transform: translate(0);
+   }
+   .fix{
+       overflow-y: hidden;
+   }
+   .menu{
+       display: flex;
+       position: fixed;
+       left: 100%;
+       height: 100vh;
+       width: 100vw;
+       background: rgba(255, 255, 255, 0.5);
+       backdrop-filter: blur(15px);
+       z-index: 10;
+       transition: 0.4s cubic-bezier(0.94, 0.06, 0.12, 0.83);
+    }
+   .menu a{
+       margin: 5vh 0;
+       color: var(--first-color);
+       font-family: Neurial Grotesk medium;
+       font-size: 18px;
+   }
+   .subscribe_mob{
+        border: 1px solid var(--first-color);
+        background-color: unset;
+        width: auto;
+        color: var(--first-color);
+   }
+   .menu_vis{
+       left: 0%;
+   }
+
+   .menu_icon{
+        position: fixed;
+        right: 10%;
+        top: 8%;
+        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
+        z-index: 10000;
+    }
+   .image-container{
+    transform: translate(-50%, -73%);
+   }
+   .custom-element{
+       width: auto;
+       height: auto;
+   }
+    .custom-element img {
+       width: 100px;
+       height: 100px;
+   }
+   .custom-element:nth-child(1) {
+        left: 88%;
+        top: 32%;
+    }
+    .custom-element:nth-child(2) {
+        left: -16%;
+        top: 61%;
+    }
+    .custom-element:nth-child(3) {
+        left: 36%;
+        top: 24%;
+    }
+    .custom-element:nth-child(4) {
+        left: -44%;
+        top: 33%;
+    }
+    .custom-element:nth-child(5) {
+        left: 0%;
+        top: 32%;
+    }
+    .custom-element:nth-child(6) {
+        left: 44%;
+        top: 61%;
+    }
+    .custom-element:nth-child(7) {
+        left: 40%;
+        top: 37%;
+    }
+   .video{
+       width: 80%;
+       height: 25%;
+   }
+   .close-button {
+    left: 94%;
+    top: -17%;
+    }
+
+   .title{
+        width: 80%;
+        transform: translate(-50%, -105%);
+    }
+    .title img{
+        width: 100%;
+    }
+    .wrapper{
+        flex-direction: column;
+        top: 65%;
+        width: 75%;
+        height: 30vh;
+    }
+    .description-text{
+        width: 100%;
+        margin-bottom: 4vh;
+    }
+    .buttons{
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .button {
+        border-radius: 50px;
         width: auto;
         padding: 0 20px;
         max-width: 157px;
@@ -834,12 +1122,7 @@ input:placeholder{
         top: unset;
         margin-left: 8%;
     }
-    #smWrapper{
-        height: 85vh;
-    }
-
-
-    #smWrapper_c{
+    #smWrapper, #smWrapper_c{
         height: 85vh;
     }
     .text-left_c{
@@ -932,8 +1215,6 @@ input:placeholder{
     .display-info{
         width: 95%;
         flex-wrap: wrap;
-    }
-    .contacts{
     }
     .download-badge{
         flex-direction: row;

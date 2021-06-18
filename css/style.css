@@ -1189,6 +1189,7 @@ input:placeholder{
     }
     .card{
         margin: 8px 0;
+        height: 260px;
     }
     
     .review-wrapper{

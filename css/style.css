@@ -698,9 +698,11 @@ input:placeholder{
        left: 0;
        transform: translate(0);
    }
-
+   .fix{
+       overflow-y: hidden;
+   }
    .menu{
-       display: none;
+       display: flex;
        position: fixed;
        left: 100%;
        height: 100vh;
@@ -708,7 +710,7 @@ input:placeholder{
        background: rgba(255, 255, 255, 0.5);
        backdrop-filter: blur(15px);
        z-index: 10;
-       transition: 0.4s;
+       transition: 0.4s cubic-bezier(0.94, 0.06, 0.12, 0.83);
     }
    .menu a{
        margin: 5vh 0;
@@ -717,9 +719,7 @@ input:placeholder{
        font-size: 18px;
    }
    .menu_vis{
-       display: flex;
        left: 0%;
-       transition: 0.3s;
    }
 
    .menu_icon{
@@ -938,5 +938,35 @@ input:placeholder{
     .download-badge{
         flex-direction: row;
          margin-top: 2vh;
+    }
+
+
+
+    /* FORM */
+    .form-wrapper {
+        flex-direction: column;
+        height: unset;
+        border-radius: 16px;
+        left: 50%;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .form-txt{
+        width: unset;
+        margin: 0 0 3vh 0;
+    }
+    .form-card{
+        width: 90%;
+        font-size: 10px;
+        margin: 0 0vh 2vh 0;
+    }
+    input{
+        width: 90%;
+    }
+    .personal{
+        flex-direction: column;
+    }
+    .dipendenti{
+        flex-shrink: 2;
     }
 }

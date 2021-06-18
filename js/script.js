@@ -448,6 +448,7 @@ window.addEventListener('load', function(){
         // MENU TOGGLE
         $('.menu_icon').click(function(){
             $('.menu').toggleClass('menu_vis');
+            $('body').addClass('fix');
         });
         $('.nav-link').click(function(){
             $('.menu').removeClass('menu_vis');

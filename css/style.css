@@ -1117,14 +1117,14 @@ input:placeholder{
     }
     .text-left{
         top: 0%;
+        
         margin-left: 8%;
         text-align: start;
         max-width: unset;
     }
-    .text-right{
-        max-width: unset;
-        top: unset;
-        margin-left: 8%;
+    .medium_t_16{
+        font-family: Neurial Grotesk regular;
+        width: 85%;
     }
     #smWrapper, #smWrapper_c{
         height: 85vh;

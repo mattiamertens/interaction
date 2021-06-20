@@ -91,7 +91,6 @@
 }
 .menu_icon{
     display: none;
-    background-color: red;
 }
 
 *{
@@ -692,13 +691,13 @@ input:placeholder{
    .menu{
        display: flex;
        position: fixed;
-       left: 100%;
        height: 100vh;
        width: 100vw;
        background: rgba(255, 255, 255, 0.5);
        backdrop-filter: blur(15px);
        z-index: 10;
-       transition: 0.4s cubic-bezier(0.94, 0.06, 0.12, 0.83);
+       clip-path: circle(0% at 85% 10%);
+       transition: 0.7s cubic-bezier(0.94, 0.06, 0.12, 0.83);
     }
    .menu a{
        margin: 5vh 0;
@@ -714,6 +713,7 @@ input:placeholder{
    }
    .menu_vis{
        left: 0%;
+       clip-path: circle(100%);
    }
 
    .menu_icon{
@@ -725,43 +725,44 @@ input:placeholder{
         z-index: 10000;
     }
    .image-container{
-    transform: translate(-50%, -73%);
+        transform: translate(-50%, -73%);
+        width: 80vw;
    }
    .custom-element{
        width: auto;
        height: auto;
    }
     .custom-element img {
-       width: 100px;
-       height: 100px;
+       width: 150px;
+       height: 150px;
    }
    .custom-element:nth-child(1) {
-        left: 88%;
-        top: 32%;
+        left: 80%;
+        top: 23%;
     }
     .custom-element:nth-child(2) {
-        left: -16%;
-        top: 61%;
+        left: 14%;
+        top: 55%;
     }
     .custom-element:nth-child(3) {
         left: 36%;
-        top: 24%;
+        top: 17%;
     }
     .custom-element:nth-child(4) {
-        left: -44%;
-        top: 33%;
+        left: -4%;
+        top: 15%;
     }
     .custom-element:nth-child(5) {
-        left: 0%;
-        top: 32%;
+        left: 20%;
+        top: 33%;
     }
     .custom-element:nth-child(6) {
         left: 44%;
         top: 61%;
     }
     .custom-element:nth-child(7) {
-        left: 40%;
-        top: 37%;
+        left: 53%;
+        top: 27%;
     }
    .video{
        width: 80%;
@@ -880,7 +881,6 @@ input:placeholder{
         margin: 24px 0;
     }
     .start, .join{
-        /* align-items: center; */
         flex-direction: column;
     }
     .join{
@@ -932,7 +932,12 @@ input:placeholder{
     }
     .download-badge{
         flex-direction: row;
-         margin-top: 2vh;
+        margin-top: 2vh;
+        width: 90%;
+        justify-content: flex-start;
+    }
+    .download-badge a{
+        margin: 0 8px;
     }
 
 
@@ -969,9 +974,6 @@ input:placeholder{
 
 /* CELLPHONE */
 @media screen and (max-width: 480px) {
-    /* .darken, .pricing, .review, .faq, .footer {
-        display: none;
-    } */
     .div_line{
         width: 90%;
     }
@@ -990,13 +992,13 @@ input:placeholder{
    .menu{
        display: flex;
        position: fixed;
-       left: 100%;
        height: 100vh;
        width: 100vw;
        background: rgba(255, 255, 255, 0.5);
        backdrop-filter: blur(15px);
        z-index: 10;
-       transition: 0.4s cubic-bezier(0.94, 0.06, 0.12, 0.83);
+       clip-path: circle(0% at 80% 10%);
+       transition: 0.7s cubic-bezier(0.94, 0.06, 0.12, 0.83);
     }
    .menu a{
        margin: 5vh 0;
@@ -1011,9 +1013,8 @@ input:placeholder{
         color: var(--first-color);
    }
    .menu_vis{
-       left: 0%;
+       clip-path: circle(100%);
    }
-
    .menu_icon{
         position: fixed;
         right: 10%;
@@ -1021,8 +1022,10 @@ input:placeholder{
         box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
         z-index: 10000;
     }
+
+
    .image-container{
-    transform: translate(-50%, -73%);
+        transform: translate(-50%, -73%);
    }
    .custom-element{
        width: auto;
@@ -1222,10 +1225,10 @@ input:placeholder{
     }
     .download-badge{
         flex-direction: row;
-         margin-top: 2vh;
+        margin-top: 2vh;
+        width: 90%;
+        justify-content: space-between;
     }
-
-
 
     /* FORM */
     .form-wrapper {
